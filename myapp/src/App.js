@@ -1,6 +1,6 @@
 import React ,{Component} from 'react';
-import Ninjas from './Ninjas'
-
+import Ninjas from './Ninjas';
+import AddNinja from './addNinjas'
 class App extends Component {
   state = {
     ninjas:[
@@ -9,13 +9,14 @@ class App extends Component {
       {name:'Luana',age:34,bellt:'red',_id:2},
       {name:'Maria',age:17,bellt:'pink',_id:3},
     ]
-      
+
   }
   render(){
     return (
-      <div>
+      <div className="app">
         <h5>Welcome to my very first app</h5>
-        <Ninjas ninjas={this.state.ninjas} />
+        <Ninjas ninjas={this.state.ninjas}/>
+        <AddNinja />
       </div>
        
     );
