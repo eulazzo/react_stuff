@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 
-const Ninjas = ({ninjas})=> {
+const Ninjas = ({ninjas, deleteNinja})=> {
   
   /*Ways to do it */
 
@@ -9,6 +9,8 @@ const Ninjas = ({ninjas})=> {
             <div className="App" key={ ninja._id }>
               <div>Name:{ninja.name}</div>
               <div>Age:{ninja.age}</div>
+              <div>Belt:{ninja.belt}</div>
+              <button onClick={ ()=> deleteNinja(ninja._id)}>Delete ninjas</button>
             </div>
       ):null;
     })
