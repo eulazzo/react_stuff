@@ -9,6 +9,7 @@ class App extends Component {
       {name:'Luana',age:34,bellt:'red',_id:2},
       {name:'Maria',age:17,bellt:'pink',_id:3},
     ]
+      
   }
   render(){
     return (
